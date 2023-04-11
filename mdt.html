@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Politi Tablet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex h-screen">
+      <div class="w-1/4 bg-gray-800 text-gray-100 p-4">
+        <h1 class="text-xl font-bold">Politi Tablet</h1>
+        <hr class="my-4">
+        <ul class="list-none">
+          <li><a href="mdt.html" class="block py-2 px-4 text-white hover:bg-gray-700">Forside</a></li>
+          <li><a href="sager.html" class="block py-2 px-4 text-white hover:bg-gray-700">Sager</a></li>
+          <li><a href="Reporteringer.html" class="block py-2 px-4 text-white hover:bg-gray-700">Reporteringer</a></li>
+          <li><a href="Opret.html" class="block py-2 px-4 text-white hover:bg-gray-700">Opret</a></li>
+          <li><a href="indstillinger.html" class="block py-2 px-4 text-white hover:bg-gray-700">Indstillinger</a></li>
+        </ul>
+      </div>
+      <div class="flex-grow p-4">
+        <h2 class="text-lg font-bold">Forside</h2>
+        <hr class="my-4">
+        <p>Velkommen til vores helt egne Politi Tablet! Her i Politiet går vi ind for Peofessionelitet, og det står vi ved!</p>
+    <div class="flex-grow p-4">
+      <h2 class="text-lg font-bold">Forside</h2>
+      <hr class="my-4">
+      <p>Velkommen til vores helt egne Politi Tablet! Her i Politiet går vi ind for Peofessionelitet, og det står vi ved!</p>
+      <div class="bg-white rounded-lg p-4">
+        <h2 class="text-xl font-bold mb-4">Search for a Person</h2>
+        <form>
+          <label class="block mb-2 font-bold" for="searchName">Name:</label>
+          <input class="w-full border rounded-lg py-2 px-4 mb-4" id="searchName" type="text" placeholder="John Doe">
+          <button class="px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg text-white" type="button" onclick="searchPerson()">Search</button>
+        </form>
+      </div>
+      
+      <script>
+        function searchPerson() {
+          const nameInput = document.getElementById("searchName").value.toLowerCase(); // konverterer navnet til små bogstaver
+          if (nameInput === "william") {
+            alert("Højde: 1,4 Nummerplade: ABC123 Husnummer:125");
+          }
+        }
+      </script>
+
+
+   
+    
+    
+    
+
+  
+  </body>
+</html> 

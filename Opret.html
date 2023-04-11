@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex h-screen">
+      <div class="w-1/4 bg-gray-800 text-gray-100 p-4">
+        <h1 class="text-xl font-bold">Opret Dokument(er)</h1>
+        <hr class="my-4">
+        <ul class="list-none">
+            <li><a href="mdt.html" class="block py-2 px-4 text-white hover:bg-gray-700">Gå Tilbage</a></li>
+        </ul>
+      </div>
+      <div class="w-3/4">
+        <div class="flex h-screen items-center justify-center">
+          <div class="bg-gray-800 text-gray-100 p-12 rounded-lg w-2/3">
+            <h1 class="text-2xl font-bold mb-4">Opret Dokument(er)</h1>
+            <form class="flex flex-col" action="https://formspree.io/f/mdovpdek" method="POST">
+              <label for="email" class="font-medium">Discord navn med tags</label>
+              <input type="email" id="email" name="email" class="py-2 px-4 mb-4 rounded-lg bg-gray-700 text-gray-100" required>
+              <label for="message" class="font-medium">Dokument</label>
+              <textarea id="message" name="message" class="py-2 px-4 mb-4 rounded-lg bg-gray-700 text-gray-100" required></textarea>
+              <button type="submit" class="py-2 px-4 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
